@@ -56,8 +56,9 @@ def region_of_interest(image):
     masked_image = cv2.bitwise_and(image, mask)
     return masked_image
 
-#image = cv2.imread('lane.jpg')
-#lane_image = np.copy(image)
+#Image reading
+image = cv2.imread('lane.jpg')
+lane_image = np.copy(image)
 
 #canny_image = canny(lane_image)
 #cropped_image = region_of_interest(canny_image)
